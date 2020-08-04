@@ -1,0 +1,166 @@
+<body class="grey-bg">
+<section class="bg-white">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg align-items-lg-center bg-white container-p-x box-shadow-none" id="layout-navbar">
+<!-- Brand demo (see assets/css/demo/demo.css) -->
+<a href="index.html" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+<span class="app-brand-logo demo m-auto">
+<!-- <img src="assets/img/amelio.png" alt="Brand Logo" class="img-fluid" style="width: 90px;"> -->
+</span>
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#layout-navbar-collapse">
+<span class="navbar-toggler-icon text-large"></span>
+</button>
+<div class="navbar-collapse collapse" id="layout-navbar-collapse">
+
+ <div class="navbar-nav align-items-lg-center">
+    <a href="index.html" class="navbar-brand app-brand demo py-0 mr-4 mr-lg-3 logo">
+    <span class="app-brand-logo demo m-auto">
+    <!-- <img src="assets/img/amelio.png" alt="Brand Logo" class="img-fluid" style="width: 90px;"> -->
+    </span>
+    </a>
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-3">
+        <a class="nav-link text-dark">ABOUT</a>
+    </div>
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-3">
+        <a class="nav-link text-dark">PRICING</a>
+    </div>
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-3">
+        <a class="nav-link text-dark">BLOG</a>
+    </div>
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-3">
+        <a class="nav-link text-dark">CONTACT US</a>
+    </div>
+ </div>
+ <div class="navbar-nav align-items-lg-center ml-auto">
+
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-3">
+        <a class="nav-link text-dark" (click)="signup()">SIGN UP</a>
+    </div>
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-3">
+       <button type="button" class="btn btn-primary">GET STARTED</button>
+    </div>
+ </div>
+</div>
+</nav>
+</div>
+</section>
+
+    <!-- [ Content ] Start -->
+    <div class="authentication-wrapper authentication-2 ui-bg-cover ui-bg-overlay-container px-4">
+        <div class="ui-bg-overlay opacity-25"></div>
+
+        <div class="authentication-inner py-5">
+
+            <div class="card">
+                <div class="p-4 p-sm-5">
+
+                    <h4 class="text-center font-weight-bold mb-5">Sign In to the Chat Panel</h4>
+
+                    <!-- Form -->
+
+                    <!-- [ Form ] End -->
+
+                    <!-- <div class="signup-content"> -->
+                      <form method="POST" id="signup-form" class="signup-form" [formGroup]="loginForm">
+                          <!-- <h2>LogIn </h2> -->
+                          <!-- <p class="desc"> <span></span></p> -->
+
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                              <input style="color: black;" type="email" class="form-input" name="email" id="email"
+                              placeholder="Email"  [(ngModel)]='email' formControlName="emailControl"/>
+                              <div *ngIf="emailControl.dirty || emailControl.touched">
+                              <div *ngIf="emailControl.hasError('required')">
+                                 <p style="color: red;font-size: 12px;">Email address is required</p>
+                              </div>
+                            </div>
+                        </div>
+                          <div class="form-group">
+                            <label for="password">Password</label>
+                              <input style="color: black;" type="password" class="form-input" name="password"
+                              id="password" placeholder="Password"
+                              [(ngModel)]='password' minlength="8" maxlength="12"
+                              formControlName="passwordControl">
+                              <div *ngIf="passwordControl.invalid && (passwordControl.dirty || passwordControl.touched)">
+                                <div *ngIf="passwordControl.hasError('required')">
+                                   <p style="color: red;font-size: 12px;">password is required</p>
+                                </div>
+                                <div style="color: red;font-size: 10px;" *ngIf="!passwordControl.hasError('required')">
+                                    Enter password between 8 and 12 characters.
+                                </div>
+                              </div>
+                          </div>
+
+
+                           <!-- <div class="form-group">
+                              <input type="submit" (click)="login()" name="submit" id="submit" class="form-submit submit" value="LogIn"/>
+
+                            <input type="submit" (click)="signup()" name="submit" id="submit" class="form-submit submit" value="signUp"/>
+                        </div> -->
+                        <div class="d-flex justify-content-between align-items-center mt-1">
+                          <button type="button" (click)="login()" class="btn btn-primary w-100"
+                          style="height: 51px;">SIGN IN <i class="feather icon-arrow-right"></i></button>
+                      </div>
+                      </form>
+                  <!-- </div> -->
+
+                </div>
+            </div>
+
+            <div class="text-center text-dark">
+                        Create an account ? <a (click)="signup()">Sign Up</a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- / Content -->
+
+
+
+    <section class="bg-white p-5">
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class="col-xl-3 col-md-6">
+                <img style="width: 90px;margin-bottom: 10px;" src="assets/img/amelio.png"/>
+                <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt</p>
+               </div>
+               <div class="col-xl-3 col-md-6">
+                 <h4 class="mb-5 pt-2">Connect With Us</h4>
+                 <p class="mb-3"><i class="feather icon-phone-call mr-3"></i>888 8888 8888</p>
+                 <p class="mb-3"><i class="feather icon-mail mr-3"></i>support@amelio.com</p>
+                 <p class="mb-3"><i class="feather icon-map-pin mr-3"></i>00 Route 166 North Suite 111 Paramus,Canada</p>
+               </div>
+               <div class="col-xl-3 col-md-6">
+                 <h4 class="mb-5 pt-2">Quick Links</h4>
+                 <a href="#" class="text-dark"><p class="mb-3 pl-3">Home</p></a>
+                 <a href="#" class="text-dark"><p class="mb-3 pl-3">About</p></a>
+                 <a href="#" class="text-dark"><p class="mb-3 pl-3">Pricing</p></a>
+                 <a href="#" class="text-dark"><p class="mb-3 pl-3">Blog</p></a>
+                 <a href="#" class="text-dark"><p class="mb-3 pl-3">Contact</p></a>
+               </div>
+               <div class="col-xl-3 col-md-6">
+                 <h4 class="mb-5 pt-2">Newsletter</h4>
+                 <div class="form-group mb-2">
+                            <i class="fas fa-paper-plane send-icon"></i>
+                            <input type="text" class="search-table pl-3 pr-3 pt-2 pb-2 grey-bg-input bg-white" placeholder="Email">
+                        </div>
+                 <p class="text-muted mb-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                 <div class="d-flex">
+                   <a href="#" class="text-primary"><i class="fab fa-facebook-f mr-3"></i></a>
+                   <a href="#" class="text-primary"><i class="fab fa-twitter mr-3"></i></a>
+                   <a href="#" class="text-primary"><i class="fab fa-linkedin mr-3"></i></a>
+                   <a href="#" class="text-primary"><i class="fab fa-instagram mr-3"></i></a>
+                 </div>
+               </div>
+            </div>
+            <p class="text-center text-muted">© 2020 Chat Panel . All Rights Reserved.</p>
+        </div>
+    </section>
+
+      <!-- JS -->
+      <script src="../../../assets/vendor/jquery/jquery.min.js"></script>
+      <script src="../../../assets/js/main.js"></script>
+</body>

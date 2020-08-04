@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="715" height="188.159" viewBox="0 0 715 188.159">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a7a7ff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#54d8ff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="graph_line" transform="translate(-1157 -788.371)">
+    <g id="Total_Views_Graph" data-name="Total Views Graph" transform="translate(1157 841.15)" opacity="0.8">
+      <path id="Filled.Graph" d="M330,463.224v-108.8s80.47,108.172,146.573,112.243c73.754-.917,74.359-56.156,139.169-86.4C670,356.524,711.4,421.294,756.786,422.874s76.706-44.391,138.624-47.584C975.632,380.1,1040,441.517,1045,444.82v44.9L330,489.8Z" transform="translate(-330 -354.422)" opacity="0.7" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Products_Sold_Graph" data-name="Products Sold Graph" transform="translate(1157 788.371)" opacity="0.8">
+      <path id="Filled.Graph-2" data-name="Filled.Graph" d="M330,461.338V386.013s82.447,49.407,148.322,52.51c71.232-3.007,83.567-24.152,139.051-52.51,47.414-23.637,94.7-30.124,140.082-28.454s84.721,27.2,138.33,29.821a248.949,248.949,0,0,0,73.174-19.236c46.582-20.492,71.567-51.284,76.04-66.867V489.352l-715,.084Z" transform="translate(-330.001 -301.277)" opacity="0.7" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

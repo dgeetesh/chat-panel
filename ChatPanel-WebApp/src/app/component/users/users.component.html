@@ -1,0 +1,264 @@
+<body>
+  <!-- [ Preloader ] Start -->
+  <div class="page-loader">
+  <div class="bg-primary"></div>
+  </div>
+  <!-- [ Preloader ] End -->
+  <!-- [ Layout wrapper ] Start -->
+  <div class="layout-wrapper layout-2">
+  <div class="layout-inner">
+  <!-- [ Layout sidenav ] Start -->
+  <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-dark logo-dark">
+  <!-- Brand demo (see assets/css/demo/demo.css) -->
+  <div class="app-brand demo">
+  <span class="app-brand-logo demo m-auto">
+    <p>Chat Panel</p>
+  <!-- <img src="assets/img/amelio.png" alt="Brand Logo" class="img-fluid" style="width: 90px;"> -->
+  </span>
+  <a href="javascript:" class="layout-sidenav-toggle d-lg-none sidenav-link text-large ml-auto">
+  <i class="ion ion-md-menu align-middle text-dark"></i>
+  </a>
+  </div>
+  <div class="sidenav-divider mt-0"></div>
+  <!-- Links -->
+  <ul class="sidenav-inner py-1">
+  <li class="pl-4"><h5 class="ml-2 text-white font-weight-bold">Chat Panel</h5></li>
+  <!-- Dashboards -->
+  <li class="sidenav-item">
+   <a
+   (click)="navigateTo('/home')"
+   class="sidenav-link">
+      <i class="sidenav-icon">
+        <img src="assets/img/dashboard.svg"></i>
+      <div>Dashboards</div>
+   </a>
+  </li>
+
+  <li class="sidenav-item">
+    <a (click)="navigateTo('/users')"  class="sidenav-link">
+       <i class="sidenav-icon"><img src="assets/img/accounts.svg"></i>
+       <div>Users</div>
+    </a>
+   </li>
+
+  </ul>
+  </div>
+  <!-- [ Layout sidenav ] End -->
+  <!-- [ Layout container ] Start -->
+  <div class="layout-container">
+  <!-- [ Layout navbar ( Header ) ] Start -->
+  <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x" id="layout-navbar">
+  <!-- Brand demo (see assets/css/demo/demo.css) -->
+  <a href="index.html" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+  <span class="app-brand-logo demo m-auto">
+  <img src="assets/img/amelio.png" alt="Brand Logo" class="img-fluid" style="width: 90px;">
+  </span>
+  </a>
+  <!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+  <div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+   <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:">
+   <i class="ion ion-md-menu text-large align-middle"></i>
+   </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#layout-navbar-collapse">
+  <span class="navbar-toggler-icon text-large"></span>
+  </button>
+  <div class="navbar-collapse collapse" id="layout-navbar-collapse">
+
+   <div class="navbar-nav align-items-lg-center">
+      <button type="button" class="btn btn-primary" (click)="navigateTo('/home')">Chat Panel</button>
+
+      <!-- Search -->
+      <!-- <div class="">
+          <i class="fas fa-search search-icon"></i>
+          <input type="email" class="search-control" placeholder="Search transactions, invoices or help">
+      </div> -->
+   </div>
+   <div class="navbar-nav align-items-lg-center ml-auto">
+
+      <div class="demo-navbar-messages nav-item dropdown mr-lg-2">
+          <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+         <i class="feather icon-plus bg-success ui-icon-sm p-2 rounded-circle text-white"></i>
+         </a>
+      </div>
+      <div class="demo-navbar-messages nav-item dropdown mr-lg-2">
+          <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+         <i class="feather icon-help-circle bg-danger ui-icon-sm p-2 rounded-circle text-white"></i>
+        </a>
+      </div>
+      <div class="demo-navbar-messages nav-item dropdown mr-lg-2">
+         <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+         <i class="fas fa-bell navbar-icon align-middle"></i>
+         <span class="badge badge-danger indicator">1</span>
+         </a>
+      </div>
+      <!-- Divider -->
+      <div class="nav-item d-none d-lg-block text-big font-weight-light line-height-1 opacity-25 mr-3 ml-1">|</div>
+      <div class="demo-navbar-messages nav-item dropdown mr-lg-2">
+         <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+         <i class="fas fa-cog navbar-icon align-middle"></i>
+         <span class="badge badge-danger indicator">1</span>
+         </a>
+      </div>
+      <div class="demo-navbar-user nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+         <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
+         <img src="http://html.phoenixcoded.net/empire/bootstrap/default/assets/img/avatars/1.png" alt class="d-block ui-w-30 rounded-circle">
+         <span class="px-1 mr-lg-2 ml-2 ml-lg-0 arrow text-dark">{{userName}}</span>
+         </span>
+         </a>
+         <div class="dropdown-menu dropdown-menu-right">
+            <a (click)="logout()" class="dropdown-item">
+            <i class="feather icon-power text-danger"></i> &nbsp; Log Out
+          </a>
+          <!-- <a >
+            <img src="assets/img/accounts.svg"(click)="navigateTo('/users')"> &nbsp; profile
+          </a> -->
+         </div>
+      </div>
+   </div>
+  </div>
+  </nav>
+  <!-- [ Layout navbar ( Header ) ] End -->
+  <!-- [ Layout content ] Start -->
+  <div class="layout-content">
+    <!-- [ content ] Start -->
+
+    <!-- <div class="alert alert-dark-primary alert-dismissible fade show text-center">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <i class="fas fa-bell navbar-icon align-middle mr-3"></i> <b>Alert</b> ( Neque porro quisquam est qui dolorem ipsum )
+      </div> -->
+
+
+    <div class="container-fluid flex-grow-1 container-p-y"  style="margin-top: 5%;">
+        <div class="row">
+            <div class="col-xl-12 col-md-12">
+                <h4 class="font-weight-bold pb-2 mb-0">Profile
+                  <span class="heading-span">( Active User Accounts )</span></h4>
+                <!-- <div class="text-muted small mt-0 mb-2 d-block breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Dashboard</li>
+                        <li><i class="fas fa-angle-right pl-3 pr-3 text-dark"></i></li>
+                        <li class="breadcrumb-item">Accounts</li>
+                    </ol>
+                </div> -->
+            </div>
+           <!-- <div class="col-xl-12 col-md-12 col-12">
+                <button type="button" class="btn btn-primary pl-4 pr-4 mb-4 mr-3">OFFICES</button>
+                <button type="button" class="btn btn-dark mb-4">INDIVIDUAL AGENTS</button>
+          </div> -->
+          <!-- <div class="col-xl-12 col-md-12 col-12">
+            <p class="text-center font-weight-bold mb-3">TOTAL AGENTS : 45</p>
+          </div> -->
+        </div>
+
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card">
+                <div class="card-body">
+                  <div class="row mb-4">
+                    <div class="col-lg-2 col-md-3">
+                      <img class="w-100" src="assets/img/girl_img.png"/>
+                    </div>
+                    <div class="col-lg-10 col-md-9">
+                      <h4 class="font-weight-bold">{{userName}} <i class="fas fa-check-circle ml-2" style="color: #3DCB27;"></i></h4>
+                      <a href="javascript:" class="mr-3 text-muted opacity-50">
+                        <i class="feather icon-message-square mr-2 text-muted"></i>{{users.email}}</a>
+                      <a href="javascript:" class="mr-3 text-muted opacity-50"><i class="feather icon-check-circle mr-2 text-muted"></i>Licenced for 10 years</a>
+                      <a href="javascript:" class="mr-3 text-muted opacity-50"><i class="feather icon-map-pin mr-2 text-muted"></i>Abc, ‎Toronto</a>
+                      <p class="text-muted mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                           <div class="col-xl-6 col-md-4">
+                               <h5 class="card-header-title pt-2 pb-2 font-weight-bold">Users</h5>
+                           </div>
+                           <div class="col-xl-3 col-md-4">
+                               <div class="table-select">
+                                  <select class="search-table pl-3">
+                                      <option>All Types</option>
+                                  </select>
+                                  <div class="select__arrow"><i class="fas fa-angle-down"></i></div>
+                                </div>
+                           </div>
+                           <div class="col-xl-3 col-md-4">
+                                <div class="table-select">
+                                 <div><img class="select-img" src="assets/img/sorting.svg"/></div>
+                                  <select class="search-table">
+                                      <option>Sort by</option>
+                                  </select>
+                                  <div class="select__arrow"><i class="fas fa-angle-down"></i></div>
+                                </div>
+                           </div>
+                       </div>
+                        <div style="height: 80vh;" class="table-responsive">
+                        <table class="table datatable-account table-borderless">
+                            <thead>
+                                <tr>
+                                    <th>User Name</th>
+                                    <th>Email</th>
+                                    <!-- <th>subscribe date</th>
+                                    <th>locations</th>
+                                    <th>last activities</th>
+                                    <th>action</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let data of items">
+                                    <!-- <td>{{item.firstName}}</td> -->
+                                    <!-- <td><button type="button" class="btn btn-danger md-btn-flat">Complete</button></td> -->
+                                    <!-- <td>{{item.email}}</td> -->
+                                    <td>{{data}}</td>
+                                    <td>14 Jan, 2019</td>
+                                    <!-- <td>
+                                        <div class="dropdown" id="nesting-dropdown-demo">
+                                            <button type="button" class="btn dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <div class="dropdown-menu" x-placement="bottom-start">
+                                                <a class="dropdown-item table-item" href="javascript:void(0)">View Project Detail</a>
+                                                <a class="dropdown-item table-item" href="javascript:void(0)">Edit</a>
+                                            </div>
+                                        </div>
+                                    </td> -->
+                                </tr>
+                                <tr >
+                                    <td>{{userName}}</td>
+                                    <td>{{users.email}}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+     </div>
+    </div>
+  <!-- [ content ] End -->
+  </div>
+  <!-- [ Layout content ] Start -->
+  </div>
+  <!-- [ Layout container ] End -->
+  </div>
+  <!-- Overlay -->
+  <div class="layout-overlay layout-sidenav-toggle"></div>
+  <!-- </div> -->
+  <!-- [ Layout wrapper] End -->
+  </body>

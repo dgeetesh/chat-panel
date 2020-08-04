@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "cryptr": "^6.0.2",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-jwt": "^5.3.3",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "morgan": "~1.9.1",
+    "node-oauth2-server": "^2.4.0",
+    "oauth2-server": "^3.0.1",
+    "passport": "^0.4.1",
+    "passport-auth0": "^1.3.3",
+    "passport-local": "^1.0.0",
+    "socket.io-client": "^2.3.0",
+    "socketio": "^1.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101.938" height="32.865" viewBox="0 0 101.938 32.865">
+  <g id="Group_4385" data-name="Group 4385" transform="translate(-588 -517)">
+    <g id="Group_4103" data-name="Group 4103" transform="translate(-20.063 -5)">
+      <text id="Globex_" data-name="Globex " transform="translate(651 540)" font-size="16" font-family="TitilliumWeb-SemiBold, Titillium Web" font-weight="600"><tspan x="0" y="0">GLOBEX </tspan></text>
+      <text id="Corporation" transform="translate(652 548)" fill="#6f7075" font-size="6" font-family="TitilliumWeb-SemiBold, Titillium Web" font-weight="600" letter-spacing="0.26em"><tspan x="0" y="0">CORPORATION</tspan></text>
+      <g id="world" transform="translate(608.063 522.933)">
+        <g id="Group_4102" data-name="Group 4102" transform="translate(1.24 1.221)">
+          <path id="Path_8806" data-name="Path 8806" d="M292.358,30.179l-1.649,1.1-2.748-.55-1.649-.55-2.2.55-1.649-.55,1.1-2.2h2.2l2.154-1.077A15.74,15.74,0,0,1,292.358,30.179Z" transform="translate(-266.12 -26.386)" fill="#03aa6f"/>
+          <path id="Path_8807" data-name="Path 8807" d="M33.513,20.2l-.55,1.649-1.649.55-1.649,2.748-2.748,1.649-3.847.55v1.649l1.1,1.1v2.2l-1.649-1.1-1.649-1.1-.956-2.874A15.928,15.928,0,0,1,28.654,18.6l1.561,1.044Z" transform="translate(-19.916 -18.604)" fill="#03aa6f"/>
+          <path id="Path_8808" data-name="Path 8808" d="M82.131,216.887l-.55,2.748-2.2,2.2v1.649l-2.2,1.649v2.748l-1.649-.55-1.1-2.748v-5.5l-2.748-.55-1.1-2.2v-1.649l1.1-1.1,1.649-1.649,1.1,2.2h3.847l1.649,2.748Z" transform="translate(-67.435 -199.905)" fill="#03aa6f"/>
+          <path id="Path_8809" data-name="Path 8809" d="M286.444,115.836a15.922,15.922,0,0,1-.879,16.966l-1.484-1.484v-2.2l-1.1-2.2-1.1-2.2v-2.2l-1.649-1.1-2.2.55-3.847-1.649-.55-3.847,1.649-1.649h3.3l1.1,1.649,3.3.55,3.3-1.1Z" transform="translate(-257.844 -108.84)" fill="#03aa6f"/>
+        </g>
+        <path id="Path_8810" data-name="Path 8810" d="M19.233,5.562l2.2-.55,1.649.55,2.748.55,1.649-1.1a15.7,15.7,0,0,1,2.363,3.2l-.165.093-3.3,1.1-3.3-.55-1.1-1.649h-3.3L17.035,8.86l.55,3.847,3.847,1.649,2.2-.55,1.649,1.1v2.2l1.1,2.2,1.1,2.2v2.2l1.484,1.484A15.938,15.938,0,0,1,1.24,9.833L2.2,12.707l1.649,1.1,1.649,1.1L4.394,16v1.649l1.1,2.2,2.748.55v5.5l1.1,2.748,1.649.55V26.446l2.2-1.649V23.149l2.2-2.2.55-2.748h-2.2l-1.649-2.748H8.242l-1.1-2.2L5.494,14.905v-2.2l-1.1-1.1V9.959l3.847-.55,2.748-1.649,1.649-2.748,1.649-.55.55-1.649-3.3-.55L9.978,1.221a15.939,15.939,0,0,1,13.058.517L20.882,2.814h-2.2l-1.1,2.2Z" transform="translate(0 0)" fill="#86daf1"/>
+      </g>
+    </g>
+  </g>
+</svg>

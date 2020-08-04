@@ -1,0 +1,209 @@
+<body>
+<!-- [ Preloader ] Start -->
+<div class="page-loader">
+<div class="bg-primary"></div>
+</div>
+<!-- [ Preloader ] End -->
+<!-- [ Layout wrapper ] Start -->
+<div class="layout-wrapper layout-2">
+<div class="layout-inner">
+<!-- [ Layout sidenav ] Start -->
+<div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-dark logo-dark">
+<!-- Brand demo (see assets/css/demo/demo.css) -->
+<div class="app-brand demo">
+<span class="app-brand-logo demo m-auto">
+  <p>Chat Panel</p>
+<!-- <img src="assets/img/amelio.png" alt="Brand Logo" class="img-fluid" style="width: 90px;"> -->
+</span>
+<a href="javascript:" class="layout-sidenav-toggle d-lg-none sidenav-link text-large ml-auto">
+<i class="ion ion-md-menu align-middle text-dark"></i>
+</a>
+</div>
+<div class="sidenav-divider mt-0"></div>
+<!-- Links -->
+<ul class="sidenav-inner py-1">
+<li class="pl-4"><h5 class="ml-2 text-white font-weight-bold">Chat Panel</h5></li>
+<!-- Dashboards -->
+<li class="sidenav-item">
+  <a
+  (click)="navigateTo('/home')"
+  class="sidenav-link">
+     <i class="sidenav-icon">
+       <img src="assets/img/dashboard.svg"></i>
+     <div>Dashboards</div>
+  </a>
+ </li>
+
+ <li class="sidenav-item">
+   <a (click)="navigateTo('/users')"  class="sidenav-link">
+      <i class="sidenav-icon"><img src="assets/img/accounts.svg"></i>
+      <div>Users</div>
+   </a>
+  </li>
+
+</ul>
+</div>
+<!-- [ Layout sidenav ] End -->
+<!-- [ Layout container ] Start -->
+<div class="layout-container">
+<!-- [ Layout navbar ( Header ) ] Start -->
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x" id="layout-navbar">
+<!-- Brand demo (see assets/css/demo/demo.css) -->
+<a href="index.html" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+<span class="app-brand-logo demo m-auto">
+<img src="assets/img/amelio.png" alt="Brand Logo" class="img-fluid" style="width: 90px;">
+</span>
+</a>
+<!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+<div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+ <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:">
+ <i class="ion ion-md-menu text-large align-middle"></i>
+ </a>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#layout-navbar-collapse">
+<span class="navbar-toggler-icon text-large"></span>
+</button>
+<div class="navbar-collapse collapse" id="layout-navbar-collapse">
+
+ <div class="navbar-nav align-items-lg-center">
+    <button type="button" class="btn btn-primary" href="/home">Chat Panel</button>
+
+    <!-- Search -->
+    <!-- <div class="">
+        <i class="fas fa-search search-icon"></i>
+        <input type="email" class="search-control" placeholder="Search transactions, invoices or help">
+    </div> -->
+ </div>
+ <div class="navbar-nav align-items-lg-center ml-auto">
+
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-2">
+        <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+       <i class="feather icon-plus bg-success ui-icon-sm p-2 rounded-circle text-white"></i>
+       </a>
+    </div>
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-2">
+        <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+       <i class="feather icon-help-circle bg-danger ui-icon-sm p-2 rounded-circle text-white"></i>
+      </a>
+    </div>
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-2">
+       <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+       <i class="fas fa-bell navbar-icon align-middle"></i>
+       <span class="badge badge-danger indicator">1</span>
+       </a>
+    </div>
+    <!-- Divider -->
+    <div class="nav-item d-none d-lg-block text-big font-weight-light line-height-1 opacity-25 mr-3 ml-1">|</div>
+    <div class="demo-navbar-messages nav-item dropdown mr-lg-2">
+       <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+       <i class="fas fa-cog navbar-icon align-middle"></i>
+       <span class="badge badge-danger indicator">1</span>
+       </a>
+    </div>
+    <div class="demo-navbar-user nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+       <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
+       <img src="http://html.phoenixcoded.net/empire/bootstrap/default/assets/img/avatars/1.png" alt class="d-block ui-w-30 rounded-circle">
+       <span class="px-1 mr-lg-2 ml-2 ml-lg-0 arrow text-dark">{{userName}}</span>
+       </span>
+       </a>
+       <div class="dropdown-menu dropdown-menu-right">
+          <a (click)="logout()" class="dropdown-item">
+          <i class="feather icon-power text-danger"></i> &nbsp; Log Out</a>
+       </div>
+    </div>
+ </div>
+</div>
+</nav>
+<!-- [ Layout navbar ( Header ) ] End -->
+<!-- [ Layout content ] Start -->
+<div class="layout-content">
+<!-- [ content ] Start -->
+
+<div class="container" style="margin-top: 10%;">
+  <h3 class=" text-center">Private Chat</h3>
+  <div class="messaging">
+        <div class="inbox_msg">
+          <div class="inbox_people">
+            <div class="headind_srch">
+              <div class="recent_heading">
+                <h4>Contacts</h4>
+              </div>
+              <div class="srch_bar">
+                <div class="stylish-input-group">
+                  <input type="text" class="search-bar"
+                  (keyup)="onChange($event)"
+                  style="color:black"
+                  [(ngModel)]="searchInput" placeholder="Search" >
+                  <span class="input-group-addon">
+                  <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                  </span> </div>
+              </div>
+            </div>
+            <div class="inbox_chat">
+              <div class="chat_list active_chat"  *ngFor="let item of filterUsers">
+                <div class="chat_people" *ngIf="item.firstName!=userName">
+                  <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+
+                  <div class="chat_ib" (click)="selectChatUser(item.firstName,item._id)">
+                    <h5> <span class="chat_date">{{item.firstName}}</span></h5>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="mesgs">
+            <div class="msg_history">
+              <div *ngFor="let message of messages">
+              <div *ngIf="message.msgFrom!=userName" class="incoming_msg">
+                <div class="incoming_msg_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil" /></div>
+                <div class="received_msg">
+                  <div class="received_withd_msg">
+                    <p>{{message.msg}}</p>
+                    <span class="time_date">{{message.date| date:'h:mm a | MMMM d'}}</span>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="message.msgFrom==userName" class="outgoing_msg">
+                <div class="sent_msg">
+                  <p>{{message.msg}}</p>
+                  <span class="time_date">{{message.date| date:'h:mm a | MMMM d'}}</span>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="type_msg">
+              <div class="input_msg_write">
+                <input type="text" class="write_msg" [(ngModel)]="txtMessage" placeholder="Type a message" />
+                <button class="msg_send_btn" (click)="sendMessage()" type="button">
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+  </div>
+
+
+
+</div>
+<!-- [ content ] End -->
+</div>
+<!-- [ Layout content ] Start -->
+</div>
+<!-- [ Layout container ] End -->
+</div>
+<!-- Overlay -->
+<div class="layout-overlay layout-sidenav-toggle"></div>
+<!-- </div> -->
+<!-- [ Layout wrapper] End -->
+</body>

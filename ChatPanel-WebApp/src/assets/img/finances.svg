@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.441" height="12.816" viewBox="0 0 16.441 12.816">
+  <g id="card" transform="translate(0 -68.301)">
+    <g id="Group_3710" data-name="Group 3710" transform="translate(0 68.3)">
+      <g id="Group_3709" data-name="Group 3709" transform="translate(0 0)">
+        <path id="Path_8773" data-name="Path 8773" d="M14.676,68.3H1.761A1.846,1.846,0,0,0,0,70.223V71.5H16.438V70.223A1.846,1.846,0,0,0,14.676,68.3Z" transform="translate(0 -68.3)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_3712" data-name="Group 3712" transform="translate(0 75.349)">
+      <g id="Group_3711" data-name="Group 3711" transform="translate(0 0)">
+        <path id="Path_8774" data-name="Path 8774" d="M0,256v3.846a1.846,1.846,0,0,0,1.761,1.923H14.68a1.846,1.846,0,0,0,1.761-1.923V256Zm13.5,2.561h-2.35a.645.645,0,0,1,0-1.284H13.5a.645.645,0,0,1,0,1.284Z" transform="translate(0 -256)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_3714" data-name="Group 3714" transform="translate(0 72.784)">
+      <g id="Group_3713" data-name="Group 3713" transform="translate(0 0)">
+        <rect id="Rectangle_3409" data-name="Rectangle 3409" width="16.441" height="1.281" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
